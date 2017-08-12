@@ -1,0 +1,65 @@
+{
+  "name": "pimatic-unieq-box",
+  "version": "0.0.0",
+  "author": {
+    "name": "Marcus Wittig",
+    "url": "https://github.com/mwittig"
+  },
+  "main": "unieq-box",
+  "icon": "assets/images/meter.svg",
+  "files": [
+    "unieq-box.coffee",
+    "unieq-box-config-schema.coffee",
+    "device-config-schema.coffee",
+    "actions",
+    "devices",
+    "assets",
+    "LICENSE",
+    "HISTORY.md",
+    "README.md"
+  ],
+  "keywords": [
+    "Smart Meter",
+    "Metering",
+    "UNIEQ-Box",
+    "Pimatic"
+  ],
+  "homepage": "https://github.com/mwittig/pimatic-unieq-box/tree/master",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mwittig/pimatic-unieq-box.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mwittig/pimatic-unieq-box/issues"
+  },
+  "license": "AGPL-3.0",
+  "maintainers": [
+    {
+      "name": "mwittig",
+      "url": "https://github.com/mwittig"
+    }
+  ],
+  "configSchema": "unieq-box-config-schema.coffee",
+  "dependencies": {
+    "pimatic-plugin-commons": "^0.9.5",
+    "promise-retryer": "0.0.1",
+    "restler-promise": "0.0.6",
+    "xml2js": "^0.4.17"
+  },
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "pimatic": ">=0.8.0 <1.0.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-coffeelint": "^0.0.16"
+  },
+  "engines": {
+    "node": ">= 4",
+    "npm": ">1.1.x"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}
